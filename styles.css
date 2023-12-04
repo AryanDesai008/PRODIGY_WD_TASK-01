@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #main-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #main-nav a:hover {
+    color: #66ccff;
+  }
+  
+  #content {
+    margin-top: 60px; /* Adjusted to account for the fixed navigation */
+  }
+  
+  /* Add styling for the sections and other content as needed */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Adjust styles when the menu is scrolled */
+  .scrolled #main-nav {
+    background-color: #555;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 600px) {
+    #main-nav ul {
+      flex-direction: column;
+    }
+  
+    #main-nav a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #nav-container {
+    display: flex;
+    justify-content: space-around;
+    opacity: 1; /* Initial opacity for the fade-in animation */
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    padding: 10px;
+    color: #93B1A6;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    color: #5C8374;
+  }
+  /* ... Previous CSS content ... */
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #183D3D;
+    color: #93B1A6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  section:hover {
+    background-color: #5C8374;
+    color: #fff;
+  }
+  
+  /* Style for images within sections */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #183D3D;
+    color: #93B1A6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center; /* Center-align the content within the section */
+  }
+  
+  section img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    display: block; /* Center-align the image */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  section:hover img {
+    transform: scale(1.1);
+  }
+  
+  section#contact {
+    text-align: center;
+  }
+  
+  #contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #183D3D;
+    color: #93B1A6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #93B1A6;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #5C8374;
+    border-radius: 3px;
+    background-color: #93B1A6;
+    color: #040D12;
+  }
+  
+  #contact-form textarea {
+    resize: vertical;
+  }
+  
+  #contact-form button {
+    background-color: #93B1A6;
+    color: #040D12;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  #contact-form button:hover {
+    background-color: #5C8374;
+    transform: scale(1.05);
+  }
+  
+  
